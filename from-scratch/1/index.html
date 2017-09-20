@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<!--
+Author 		: Mohammed Ahmed Refaay
+Description	: Build a website from scratch " design and develop ". 
+version		: 0.1
+date		: 18/04/2017
+-->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Mohammed Refaay">
+    <meta name="description" content="The Best Place To Get Your Coats">
+    <title>Coats | The Best Place To Get Your Coats</title>
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<!-- header -->
+	<header id="header">
+    	<div class="sizer">
+            <nav>
+                <!-- close-nav -->
+                <button id="close-nav" style="display:none;">
+                	<i class="fa fa-times" aria-hidden="true"></i>
+                </button>
+                <!-- open-nav -->
+                <button id="open-nav" style="display:block;">
+                	<i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+                <!-- nav-items -->
+                <ul>
+                    <li class="capitalize"><a href="#header">home</a></li>
+                    <li class="capitalize"><a href="#products">products</a></li>
+                    <li class="capitalize"><a href="#team">our team</a></li>
+                    <li class="capitalize"><a href="#testimonials">testimonials</a></li>
+                    <li class="capitalize"><a href="#contact-us">contact us</a></li>
+                </ul>
+            </nav>
+            <!-- content-header -->
+        	<div class="content-header">
+                <div>
+                    <h1 class="capitalize">coats</h1>
+                    <p class="capitalize">the best place to get<br>your coats</p>
+                    <a><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
+                </div>
+            </div>
+            <!-- /content-header -->
+        </div>
+        <div class="header-background-img"><img src="images/hh.png" alt="Coats"/></div>
+        <div class="header-background"></div>
+        <!-- JavaScript actions for nav -->
+        <script type="text/javascript">
+            var open_nav = document.getElementById("open-nav");
+            var close_nav = document.getElementById("close-nav");
+            var nav_ul = document.querySelector("nav ul");
+            open_nav.addEventListener("click",function(){
+                open_nav.setAttribute('style','display: none;');
+                close_nav.setAttribute('style','display: block;');
+                nav_ul.setAttribute('style','display: block;');
+            });
+            close_nav.addEventListener("click",function(){
+                close_nav.setAttribute('style','display: none;');
+                nav_ul.setAttribute('style','display: none;');
+                open_nav.setAttribute('style','display: block;');
+            });
+        </script>
+    </header>
+    <!-- /header -->
+    <!-- whole-content -->
+    <section id="whole-content">
+        <!-- products -->
+        <section id="products">
+        	<div class="sizer">
+                <!-- title -->
+                <div class="title">
+                	<div class="line"></div>
+                    <h3 class="capitalize">our products</h3>
+                    <div class="line"></div>
+                </div>
+                <!-- /title -->
+                <!-- content-products -->
+                <div class="content-products">
+                    <!-- product-box -->
+                    <div class="product-box">
+                    	<div class="product-image">
+                        	<img src="images/3409018_fpx.jpg" alt="Coats"/>
+                        </div>
+                        <div class="product-details capitalize">
+                        	<table>
+                                <tr>
+                                    <td class="product-title" colspan="2">
+                                        <h4>london fog coat durham raincoat</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-button">
+                                        <button class="capitalize">more details</button>
+                                    </td>
+                                    <td class="product-price">
+                                        <span>50$</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /product-box -->
+                    <!-- product-box -->
+                    <div class="product-box">
+                        <div class="product-image">
+                            <img src="images/3520064_fpx.jpg" alt="Coats"/>
+                        </div>
+                        <div class="product-details capitalize">
+                            <table>
+                                <tr>
+                                    <td class="product-title" colspan="2">
+                                        <h4>MICHAEL michael kors men's collin slim fit rain coat</h4>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="product-button">
+                                        <button class="capitalize">more details</button>
+                                    </td>
+                                    <td class="product-price">
+                                        <span>60$</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /product-box -->
+                    <!-- product-box -->
+                    <div class="product-box">
+                    	<div class="product-image">
+                        	<img src="images/3409018_fpx.jpg" alt="Coats"/>
+                        </div>
+                        <div class="product-details capitalize">
+                        	<table>
+                                <tr>
+                                    <td class="product-title" colspan="2">
+                                        <h4>london fog coat durham raincoat</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-button">
+                                        <button class="capitalize">more details</button>
+                                    </td>
+                                    <td class="product-price">
+                                        <span>50$</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /product-box -->
+                    <!-- product-box -->
+                    <div class="product-box">
+                        <div class="product-image">
+                            <img src="images/3520064_fpx.jpg" alt="Coats"/>
+                        </div>
+                        <div class="product-details capitalize">
+                            <table>
+                                <tr>
+                                    <td class="product-title" colspan="2">
+                                        <h4>MICHAEL michael kors men's collin slim fit rain coat</h4>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="product-button">
+                                        <button class="capitalize">more details</button>
+                                    </td>
+                                    <td class="product-price">
+                                        <span>60$</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /product-box -->
+                    <!-- product-box -->
+                    <div class="product-box">
+                    	<div class="product-image">
+                        	<img src="images/3409018_fpx.jpg" alt="Coats"/>
+                        </div>
+                        <div class="product-details capitalize">
+                        	<table>
+                                <tr>
+                                    <td class="product-title" colspan="2">
+                                        <h4>london fog coat durham raincoat</h4>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td class="product-button">
+                                        <button class="capitalize">more details</button>
+                                    </td>
+                                    <td class="product-price">
+                                        <span>50$</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /product-box -->
+                    <!-- product-box -->
+                    <div class="product-box">
+                        <div class="product-image">
+                            <img src="images/3520064_fpx.jpg" alt="Coats"/>
+                        </div>
+                        <div class="product-details capitalize">
+                            <table>
+                                <tr>
+                                    <td class="product-title" colspan="2">
+                                        <h4>MICHAEL michael kors men's collin slim fit rain coat</h4>
+                                    </td>
+                                 </tr>
+                                 <tr>
+                                    <td class="product-button">
+                                        <button class="capitalize">more details</button>
+                                    </td>
+                                    <td class="product-price">
+                                        <span>60$</span>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <!-- /product-box -->
+                </div>
+                <!-- /content-products -->
+            </div>
+        </section>
+        <!-- /products -->
+        <!-- team -->
+        <section id="team">
+        	<div class="section-background-image"></div>
+        	<div class="sizer">
+                <!-- title -->
+                <div class="title">
+                    <div class="line"></div>
+                    <h3 class="capitalize">our team</h3>
+                    <div class="line"></div>
+                </div>
+                <!-- /title -->
+                <!-- content-team -->
+                <div class="content-team">
+                    <!-- team-box -->
+                    <div class="team-box">
+                        <img src="images/m-one.png" alt="Team Member"/>
+                        <h4 class="capitalize">member one</h4>
+                        <p class="capitalize">head manager</p>
+                    </div>
+                    <!-- /team-box -->
+                    <!-- team-box -->
+                    <div class="team-box">
+                        <img src="images/m-two.png" alt="Team Member"/>
+                        <h4 class="capitalize">member two</h4>
+                        <p class="capitalize">product manager</p>
+                    </div>
+                    <!-- /team-box -->
+                    <!-- team-box -->
+                    <div class="team-box">
+                        <img src="images/m-three.png" alt="Team Member"/>
+                        <h4 class="capitalize">member three</h4>
+                        <p class="capitalize">sales manager</p>
+                    </div>
+                    <!-- /team-box -->
+                </div>
+                <!-- /content-team -->
+            </div>
+        </section>
+        <!-- /team -->
+        <!-- testimonials -->
+        <section id="testimonials">
+            <!-- title -->
+            <div class="title">
+            	<div class="line"></div>
+                <h3 class="capitalize">testimonials</h3>
+                <div class="line"></div>
+            </div>
+            <!-- /title -->
+            <!-- content-testimonials -->
+            <div>
+                <div class="dq-one"></div>
+                <div class="content-testimonials">
+                    <!-- testimonials-1 -->
+                    <div class="testimonials-box">
+                        <p>1 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <br>
+                        <div>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                        </div>
+                        <br>
+                        <p class="capitalize">client name 1</p>
+                    </div>
+                    <!-- testimonials-2 -->
+                    <div class="testimonials-box">
+                        <p>2 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <br>
+                        <div>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <br>
+                        <p class="capitalize">client name 2</p>
+                    </div>
+                    <!-- testimonials-3 -->
+                    <div class="testimonials-box">
+                        <p>3 Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                        <br>
+                        <div>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star gold" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                            <i class="fa fa-star" aria-hidden="true"></i>
+                        </div>
+                        <br>
+                        <p class="capitalize">client name 3</p>
+                    </div>
+                </div>
+                <div class="dq-two"></div>
+                <div class="navigation-buttons"></div>
+            </div>
+            <!-- /content-testimonials -->
+            <!-- JavaScript for navigation -->
+            <script type="text/javascript">
+            	var testimonials_box = document.getElementsByClassName('testimonials-box');
+				var navigation_buttons = document.getElementsByClassName('navigation-buttons');
+				
+				var content = "";
+            	for (var i = 0; i < testimonials_box.length; i++){
+					content += '<a id="NavName'+i+'" onclick="navigation_action('+i+');"><i class="fa fa-circle" aria-hidden="true"></i></a>';
+					var theClass = testimonials_box[i].getAttribute('class');
+					testimonials_box[i].setAttribute('class', theClass+' numNav'+i);
+				}
+				navigation_buttons[0].innerHTML = content;
+				
+				function navigation_action(r){
+					var navigation_button = document.querySelectorAll('.navigation-buttons a');
+					for (var t = 0; t < navigation_button.length; t++){
+						navigation_button[t].setAttribute("style","color: #989898;");
+					}
+					var activeButton = document.getElementById('NavName'+r);
+					activeButton.setAttribute("style","color: #3b3d4a;");
+					
+					for (var y = 0; y < testimonials_box.length; y++){
+						testimonials_box[y].setAttribute("style","display: none;");
+					}
+					document.getElementsByClassName('numNav'+r)[0].setAttribute("style","display: block;");
+				}
+            </script>
+        </section>
+        <!-- /testimonials -->
+        <!-- payment-method -->
+        <section id="payment-method">
+        	<div class="section-background-image"></div>
+            <div class="sizer">
+                <!-- content-payment-method -->
+                <div>
+                    <img src="images/1.png" alt="Payment method"/>
+                    <img src="images/2.png" alt="Payment method"/>
+                    <img src="images/5.png" alt="Payment method"/>
+                    <img src="images/12.png" alt="Payment method"/>
+                    <img src="images/17.png" alt="Payment method"/>
+                    <img src="images/8.png" alt="Payment method"/>
+                </div>
+                <!-- /content-payment-method -->
+            </div>
+        </section>
+        <!-- /payment-method -->
+        <!-- contact-us -->
+        <section id="contact-us">
+        	<div class="sizer">
+                <!-- title -->
+                <div class="title">
+                    <div class="line"></div>
+                    <h3 class="capitalize">contact us</h3>
+                    <div class="line"></div>
+                </div>
+                <!-- /title -->
+                <!-- content-contact-us -->
+                	<div class="content-contact-us">
+                        <div>
+                            <table>
+                                <tr>
+                                    <td><i class="fa fa-phone" aria-hidden="true"></i></td>
+                                    <td>
+                                    <span class="capitalize">phone</span><br>
+                                    1 (555) 555 55 55
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-envelope" aria-hidden="true"></i></td>
+                                    <td>
+                                    <span class="capitalize">email</span><br>
+                                    aa@aa.com
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                                    <td>
+                                    <span class="capitalize">address</span><br>
+                                    In somewhere in the world In somewhere in the world In somewhere in the world In somewhere in the world In somewhere in the world
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                        <div>
+                            <img src="images/221.JPG" alt="map"/>
+                        </div>
+                    </div>
+                <!-- /content-contact-us -->
+            </div>
+        </section>
+        <!-- /contact-us -->
+        <!-- footer -->
+        <footer>
+            <!-- content-footer -->
+                <div>
+                    <h2 class="capitalize">coats</h2>
+                    <p class="capitalize">the best place to get your coats</p>
+                    <div>
+                        <a href="index.html"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                        <a href="index.html"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                        <a href="index.html"><i class="fa fa-google-plus" aria-hidden="true"></i></a>
+                        <a href="index.html"><i class="fa fa-behance" aria-hidden="true"></i></a>
+                    </div>
+                    <p class="capitalize copyright">copyright reserved</p>
+                </div>
+            <!-- /content-footer -->
+        </footer>
+        <!-- /footer -->
+    </section>
+    <!-- /whole-content -->
+</body>
+</html>
