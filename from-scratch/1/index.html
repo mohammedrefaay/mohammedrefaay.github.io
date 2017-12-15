@@ -2,8 +2,8 @@
 <!--
 Author 		: Mohammed Ahmed Refaay
 Description	: Build a website from scratch " design and develop ". 
-version		: 0.1
-date		: 18/04/2017
+version		: 0.2
+date		: 15/12/2017
 -->
 <html lang="en">
 <head>
@@ -18,7 +18,7 @@ date		: 18/04/2017
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
-    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <link href="style-min.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
@@ -48,13 +48,13 @@ date		: 18/04/2017
                 <div>
                     <h1 class="capitalize">coats</h1>
                     <p class="capitalize">the best place to get<br>your coats</p>
-                    <a><span><i class="fa fa-angle-down" aria-hidden="true"></i></span></a>
                 </div>
             </div>
             <!-- /content-header -->
         </div>
-        <div class="header-background-img"><img src="images/hh.png" alt="Coats"/></div>
-        <div class="header-background"></div>
+        <div class="header-background">
+            <div class="header-background-img"><img src="images/hh.png" alt="Coats"/></div>            
+        </div>
         <!-- JavaScript actions for nav -->
         <script type="text/javascript">
             var open_nav = document.getElementById("open-nav");
@@ -410,7 +410,7 @@ date		: 18/04/2017
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td><i class="fa fa-map-marker" aria-hidden="true"></i></td>
+                                    <td style="padding-top: 7px;"><i class="fa fa-map-marker" aria-hidden="true"></i></td>
                                     <td>
                                     <span class="capitalize">address</span><br>
                                     In somewhere in the world In somewhere in the world In somewhere in the world In somewhere in the world In somewhere in the world
