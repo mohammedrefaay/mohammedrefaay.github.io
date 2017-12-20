@@ -2,8 +2,8 @@
 <!-- 
 Author 		: Mohammed Ahmed Refaay
 Description	: Converting a free PSD template to a static HTML page with some animation. 
-version		: 0.2
-date		: 12/04/2017
+version		: 0.3
+date		: 20/12/2017
 -->
 <html lang="en">
 <head>
@@ -306,9 +306,7 @@ $(window).on("load", function() {
 	$("#Header img, #Header a").addClass("animated fadeInUp");
 });
 $(document).ready(function() {
-	
 	//  Slider
-	
 	$("#fifth_section ul li:first-child").css("display","block");
 	$("#fifth_section img:first-child").css({"opacity":"1","width":"95px"});
 	$("#fifth_section img").click(function(){
@@ -318,7 +316,6 @@ $(document).ready(function() {
 		$("#fifth_section ul li").hide();
 		$("#fifth_section ul li:nth-child("+(the+1)+")").fadeIn();
 	});
-	
 	// End Slider
 	
 	$(".mynavbutton").click(function(){
@@ -327,6 +324,13 @@ $(document).ready(function() {
 	
 	// Animation 
 	$(window).scroll(function() {
+
+        if($(this).scrollTop() > 20){
+            $("#Navbar").css('background-color','#fdfdfd');
+        }else{
+            $("#Navbar").css('background-color','transparent');
+        }
+        
 		if( $(document).scrollTop() > 200 ){
 			$("#first_section").addClass("animated zoomIn");
 		}
@@ -335,9 +339,6 @@ $(document).ready(function() {
 		}
 		if( $(document).scrollTop() > 1625 ){
 			$(".third_section_block").addClass("animated zoomInLeft");
-		}
-		if( $(document).scrollTop() > 2100 ){
-			$("#fourth_section").addClass("animated zoomIn");
 		}
 		if( $(document).scrollTop() > 4500 ){
 			$(".sixth_section_block:nth-child(1)").addClass("animated zoomInLeft");

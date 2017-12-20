@@ -33,7 +33,7 @@ a:hover{
     opacity: 0;
     transform: translate3d(0, 100%, 0);
 }
-#first_section, #fourth_section{
+#first_section{
     opacity: 0;
     transform: scale3d(.3, .3, .3);
 }
@@ -56,7 +56,6 @@ a:hover{
 	line-height: 60px;
 	position: fixed;
 	width: 100%;
-	background-color: #f9fbfa;
 	z-index: 10;
 	padding: 0 20px;
 	box-sizing: border-box;
@@ -104,12 +103,16 @@ li a.apple_button:hover{
 	background-size: cover;
 	text-align: center;
 	overflow: hidden;
-	height: 870px;
+	height: 100vh;
 	box-sizing: border-box;
 }
-#Header h1, #Header p{
+#Header h1{
 	width: 75%;
 	margin: 0 auto;
+}
+#Header p{
+    width: 50%;
+    margin: 20px auto;
 }
 a.default_button{
 	width: 9%;
@@ -422,7 +425,6 @@ a.apple_button_black:hover{
 	margin: 0 0 20px 0;
 }
 .footer_links{
-	display: inline-block;
 	float: left;
 	margin: 0 20px 20px 20px;
     text-align:  left;
@@ -434,6 +436,11 @@ a.apple_button_black:hover{
 	line-height: 30px;
 }
 
+@media (max-width:1280px) {
+	#Header p {
+		width: 75%;
+	}
+}
 /* Small devices (tablets, 768px and down) */
 @media (max-width:780px) { 
 /* navbar */
@@ -447,7 +454,7 @@ a.apple_button_black:hover{
 	box-sizing: border-box;
 }
 .mynavbutton{
-	display: inline-block;
+	display: block;
 	float: right;
 	padding: 5px 0 0 0;
 	box-sizing: border-box;
